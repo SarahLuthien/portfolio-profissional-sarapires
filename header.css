@@ -1,0 +1,75 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: 3rem;
+    padding: 1.5rem;
+    font-size: 1.12rem;
+    flex-flow: row nowrap;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+a:hover{
+    color: var(--cor-principal);
+}
+
+.logo{
+    display: flex;
+    height: 8rem;
+}
+
+.menu_list{
+    display: flex;
+    text-align: center;
+    gap: 1.87rem;
+    white-space: nowrap;  /* Não deixa a linha do texto quebrar que nem o flex-wrap*/
+}
+
+#cv{
+    background-color: var(--cor-principal);
+    border-radius: 10px;
+    padding: 4px 20px 4px 20px;
+    color: var(--cor-clara);
+}
+
+#cv:hover{
+    color: var(--cor-secundaria);
+}
+
+/*Tablet*/
+@media (max-width: 768px){
+
+    .menu_list_item:nth-child(1),
+    .menu_list_item:nth-child(2),
+    .menu_list_item:nth-child(3),
+    .menu_list_item:nth-child(4){
+        display: none;
+        height: 100%;
+    }
+
+}
+
+
+/*Mobile*/
+@media (max-width: 425px){
+
+
+
+    .menu_list_item:nth-child(1),
+    .menu_list_item:nth-child(2),
+    .menu_list_item:nth-child(3),
+    .menu_list_item:nth-child(4),
+    .menu_list_item:nth-child(5){
+        display: none;
+        height: 100%;
+    }
+    
+}

@@ -1,0 +1,39 @@
+.container_apresentacao{
+    display: flex;
+    padding: 0px 80px;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 6rem;
+
+}
+
+.foto_perfil{
+    height: 29rem;
+}
+
+.container_texto{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2rem;
+}
+
+.titulo_apresentacao{
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+.subtitulo_apresentacao{
+    font-size: 1.37rem;
+    font-weight: 400;
+    color: var(--cor-principal);
+}
+
+.link_list_social{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+    flex-direction: row;
+}
+
