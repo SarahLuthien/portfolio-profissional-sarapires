@@ -1,11 +1,11 @@
-header{
+.cabecalho_container{
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
     gap: 3rem;
-    padding: 1.5rem;
     font-size: 1.12rem;
     flex-flow: row nowrap;
+    height: 3.75rem; 
 }
 
 ol, ul {
@@ -21,9 +21,14 @@ a:hover{
     color: var(--cor-principal);
 }
 
+
+.title_logo{
+    height: 2rem;
+}
+
+
 .logo{
-    display: flex;
-    height: 8rem;
+    height: 7rem;
 }
 
 .menu_list{
@@ -44,8 +49,34 @@ a:hover{
     color: var(--cor-secundaria);
 }
 
+
+/*Computador*/
+@media (max-width: 1024px){
+    .cabecalho_container{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 60px 0px 30px;
+    }
+
+    .logo{
+        height: 6rem;
+    }
+}
+
 /*Tablet*/
 @media (max-width: 768px){
+
+    .cabecalho_container{
+        display: flex;
+        font-size: 1rem;
+        margin: 2rem;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+    .logo{
+        height: 6rem;
+    }
 
     .menu_list_item:nth-child(1),
     .menu_list_item:nth-child(2),
@@ -61,6 +92,17 @@ a:hover{
 /*Mobile*/
 @media (max-width: 425px){
 
+    .cabecalho_container{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.87rem;
+        font-weight: bold;
+        
+    }
+
+    .logo{
+        height: 4.25rem;
+    }
 
 
     .menu_list_item:nth-child(1),
