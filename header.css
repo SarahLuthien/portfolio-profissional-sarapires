@@ -1,11 +1,12 @@
 .cabecalho_container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 3rem;
     font-size: 1.12rem;
     flex-flow: row nowrap;
     height: 3.75rem; 
+    padding: 0 3rem;
 }
 
 ol, ul {
