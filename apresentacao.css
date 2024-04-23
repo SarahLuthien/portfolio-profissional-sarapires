@@ -1,6 +1,6 @@
 .container_apresentacao_conteudo{
     display: flex;
-    padding: 3rem;
+    padding: 5rem;
     justify-content: space-between;
     flex-direction:row-reverse
 }
