@@ -1,0 +1,22 @@
+.about{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+    align-items: right;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--cor-background);
+}
+
+.title_about{
+    font-size: 1.38rem;
+    font-weight: bold;
+}
+
+.paragraph_about{
+    font-size: 0.87rem;
+}
+
+.logo_animado{
+    height: 300px;
+}

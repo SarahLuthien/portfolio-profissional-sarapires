@@ -9,7 +9,6 @@
 .foto_perfil{
     display: flex;
     height: 23rem;
-    width: 20%;
     
 }
 
@@ -81,7 +80,7 @@
     .foto_perfil{
         display: flex;
         height: 9.12rem;   
-        padding-right: 35rem;      
+        padding-right: 31rem;      
     }
 
     .link_list_social{
@@ -103,7 +102,6 @@
 
     .foto_perfil{
         height: 7.12rem;
-        width: 50%;
         padding-right: 4rem;
     }
 
