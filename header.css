@@ -1,3 +1,4 @@
+
 .cabecalho_container{
     display: flex;
     justify-content: space-between;
@@ -6,7 +7,8 @@
     font-size: 1.12rem;
     flex-flow: row nowrap;
     height: 3.75rem; 
-    padding: 0 3rem;
+    padding: 0 1rem;
+    margin: 0 2rem;
 }
 
 ol, ul {
@@ -29,7 +31,7 @@ a:hover{
 
 
 .logo{
-    height: 7rem;
+    height: 3rem;
 }
 
 .menu_list{
@@ -50,18 +52,24 @@ a:hover{
     color: var(--cor-secundaria);
 }
 
+.menu_list_contato{
+    display: flex;
+    white-space: nowrap;
+    font-weight: bold; 
+}
+
 
 /*Computador*/
 @media (max-width: 1024px){
     .cabecalho_container{
         display: flex;
         justify-content: space-around;
-        margin: 20px 60px 0px 30px;
     }
 
     .logo{
-        height: 6rem;
+        height: 2.5rem;
     }
+
 }
 
 /*Tablet*/
@@ -70,21 +78,50 @@ a:hover{
     .cabecalho_container{
         display: flex;
         font-size: 1rem;
-        margin: 2rem;
-        justify-content: space-between;
         font-weight: bold;
+        margin: 0;
+        padding: 0;
     }
 
+    .title_logo{
+       height: auto;
+    }
+    
+
     .logo{
-        height: 6rem;
+        height: 2rem;
+    }
+
+    .menu_list{
+        display: flex;
+        gap: 0px;
     }
 
     .menu_list_item:nth-child(1),
     .menu_list_item:nth-child(2),
     .menu_list_item:nth-child(3),
-    .menu_list_item:nth-child(4){
+    .menu_list_item:nth-child(4),
+    .menu_list_item:nth-child(5){
         display: none;
         height: 100%;
+    }
+
+}
+
+@media (max-width: 690px){
+
+    .cabecalho_container{
+        display:flex;
+        font-size: 0.5rem;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+    .container_texto{
+        display: flex;
+        margin: 0;
     }
 
 }
@@ -95,14 +132,15 @@ a:hover{
 
     .cabecalho_container{
         display: flex;
-        justify-content: space-between;
+        padding: 0 1rem 0 1rem;
         font-size: 0.87rem;
         font-weight: bold;
+        margin: 0;
         
     }
 
     .logo{
-        height: 4.25rem;
+        height: 0.5rem;
     }
 
 

@@ -8,7 +8,7 @@
 
 .foto_perfil{
     display: flex;
-    height: 23rem;
+    height: 22rem;
     
 }
 
@@ -43,27 +43,23 @@
 }
 
 
-/*Computador*/
-@media (max-width: 1024){
-   
-}
-
 /*Tablet*/
 @media (max-width: 768px){
 
     .container_apresentacao_conteudo{
         display: flex;
-        padding: 3rem;
+        padding: 2rem 0;
+        margin: 1rem;
         justify-content: space-between;
         flex-direction: column;
     }
 
-
     .container_texto{
         display: flex;
-        margin: 2rem;
+        margin: 10px 0px;
     }
 
+    
     .titulo_apresentacao{
         font-size: 1.37rem;
         font-weight: bold;
@@ -79,8 +75,7 @@
 
     .foto_perfil{
         display: flex;
-        height: 9.12rem;   
-        padding-right: 31rem;      
+        height: 9.12rem;
     }
 
     .link_list_social{
@@ -97,18 +92,22 @@
     .container_apresentacao_conteudo{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        margin: 0;
     }
 
     .foto_perfil{
         height: 7.12rem;
-        padding-right: 4rem;
+        margin-top: 2rem;
+        padding: 0 0 1rem;
     }
 
     .container_texto{
         display: flex;
         text-align: left;
         gap: 1rem;
+        margin: 0;
           
     }
 

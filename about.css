@@ -9,14 +9,60 @@
 }
 
 .title_about{
-    font-size: 1.38rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .paragraph_about{
-    font-size: 0.87rem;
+    font-size: 1rem;
+    font-weight: 600; 
+    white-space: wrap;
+     
 }
 
 .logo_animado{
-    height: 300px;
+    display: flex;
+    height: 18.75rem;
+}
+
+
+/*Tablet*/
+@media (max-width: 768px){
+    
+    .about{
+        display: flex;
+        padding: 1rem 1rem;
+    }
+
+    .title_about{
+        font-size: 1.38rem;
+        font-weight: bold;
+    }
+
+    .paragraph_about{
+        font-size: 0.87rem;
+        font-weight: 600;  
+    }
+    
+    
+}
+
+/*Mobile*/
+@media (max-width: 425px){
+    .about{
+        display: flex;
+        padding: 1rem 1rem;
+    }
+
+    .title_about{
+        font-size: 1.38rem;
+        font-weight: bold;
+    }
+
+    .paragraph_about{
+        font-size: 0.87rem;
+        font-weight: 600;  
+    }
+
+
 }

@@ -3,30 +3,30 @@
 @import url("apresentacao.css");
 @import url("about.css");
 
+*{
+margin: 0%;
+padding: 0%;
+} 
+
 :root{
     --cor-principal: #9024B6;
     --cor-secundaria: #000000;
     --cor-clara: #eeeeee;
-    --cor-background: #ddb7eb;
+    --cor-background: #9024b6;
 
 }
 
-*{
-    margin: 0%;
-    padding: 0%;
-}
 
 body{
     box-sizing: border-box;
     font-family: 'Raleway';
-    background-color: #f6f5f7;
+    background-color: #f4f4f4;
     line-height: 1;
     color: var(--cor-secundaria);
     overflow-x: hidden;
 }
 
-main{
+/* main{
     display: flex;
     flex-direction: column;
-
-}
+} */
