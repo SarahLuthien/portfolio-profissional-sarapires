@@ -13,10 +13,11 @@
     font-weight: bold;
 }
 
-.paragraph_about{
+.about_paragraph{
     font-size: 1rem;
-    font-weight: 600; 
+    font-weight: 400; 
     white-space: wrap;
+    color: var(--cor-clara);
      
 }
 
@@ -39,9 +40,10 @@
         font-weight: bold;
     }
 
-    .paragraph_about{
+    .about_paragraph{
         font-size: 0.87rem;
-        font-weight: 600;  
+        font-weight: 400;  
+        color: var(--cor-clara);
     }
     
     
@@ -59,9 +61,10 @@
         font-weight: bold;
     }
 
-    .paragraph_about{
+    .about_paragraph{
         font-size: 0.87rem;
-        font-weight: 600;  
+        font-weight: 400;  
+        color: var(--cor-clara);
     }
 
 

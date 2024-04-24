@@ -1,9 +1,10 @@
 @import url("reset.css");
 @import url("header.css");
-@import url("apresentacao.css");
+@import url("presentation.css");
 @import url("about.css");
 @import url("skills.css");
 @import url("hobbies.css");
+@import url("academic.css");
 
 *{
 margin: 0%;
