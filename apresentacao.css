@@ -42,6 +42,9 @@
     font-weight: medium;
 }
 
+.curriculo{
+    display: none;
+}
 
 /*Tablet*/
 @media (max-width: 768px){
@@ -130,6 +133,11 @@
         flex-direction: row;
         font-weight: medium;
     }
+
+    .curriculo{
+        display: block;
+    }
+    
 
 }
 
