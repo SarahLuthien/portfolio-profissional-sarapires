@@ -8,6 +8,7 @@
 .titulo_skills{
     font-size: 1.37rem;
     font-weight: bold;
+    text-align: center;
     color: var(--cor-secundaria);
 
 }
@@ -72,6 +73,7 @@
     .container_skills{
         display: flex;
         gap: 4rem;
+        padding: 6rem 2rem;
     
     }
 

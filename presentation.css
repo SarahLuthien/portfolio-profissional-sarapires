@@ -8,7 +8,7 @@
 
 .foto_perfil{
     display: flex;
-    height: 22rem;
+    height: 18rem;
     
 }
 
@@ -37,9 +37,12 @@
 .link_list_social{
     display: flex;
     gap: 2rem;
+    align-items: center;
+    flex-wrap: nowrap;
     font-size: 1.3rem;
     flex-direction: row;
     font-weight: medium;
+    flex-wrap: nowrap;
 }
 
 .curriculo{
@@ -47,7 +50,7 @@
 }
 
 /*Tablet*/
-@media (max-width: 768px){
+@media (max-width: 900px){
 
     .container_apresentacao_conteudo{
         display: flex;
@@ -90,13 +93,13 @@
 }
 
 /*Mobile*/
-@media (max-width: 425px){
+@media (max-width: 528px){
 
     .container_apresentacao_conteudo{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 2rem 1rem;
+        padding: 4rem 1rem;
         margin: 0;
     }
 
