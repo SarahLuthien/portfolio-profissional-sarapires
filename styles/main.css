@@ -1,11 +1,13 @@
-@import url("reset.css");
-@import url("header.css");
-@import url("presentation.css");
-@import url("about.css");
-@import url("skills.css");
-@import url("hobbies.css");
-@import url("academic.css");
-@import url("experience.css");
+@import url("/styles/reset.css");
+@import url("/styles/header.css");
+@import url("/styles/presentation.css");
+@import url("/styles/about.css");
+@import url("/styles/skills.css");
+@import url("/styles/hobbies.css");
+@import url("/styles/academic.css");
+@import url("/styles/experience.css");
+@import url("/styles/footer.css");
+@import url("/styles/formcontato.css");
 
 *{
 margin: 0%;

@@ -53,6 +53,44 @@
     width: 100%;
 }
 
+
+.experiencia__botao--repo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9024b6;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: #9024b6;
+    transition: background-color 0.3s;
+    filter:drop-shadow(3px 5px 1px #9024b6)
+  }
+  
+  .experiencia__botao--repo:hover {
+    background-color: #948692;
+  }
+
+.experiencia__botao--demo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c5c5c5;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: #c5c5c5;
+    transition: background-color 0.3s;
+    filter:drop-shadow(3px 5px 1px #c5c5c5)
+}
+
+.experiencia__botao--demo:hover {
+    background-color: #9565ac
+}
+
+
+
 /*Tablet*/
 @media (min-width:768px){
 

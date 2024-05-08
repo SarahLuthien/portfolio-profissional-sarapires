@@ -23,7 +23,7 @@
 }
 
 .titulo_apresentacao{
-    font-size: 3.25rem;
+    font-size: 2.8rem;
     font-weight: bold;
     color: var(--cor-secundaria);
 }
@@ -41,8 +41,6 @@
     flex-wrap: nowrap;
     font-size: 1.3rem;
     flex-direction: row;
-    font-weight: medium;
-    flex-wrap: nowrap;
 }
 
 .curriculo{
@@ -64,7 +62,6 @@
         display: flex;
         margin: 10px 0px;
     }
-
     
     .titulo_apresentacao{
         font-size: 1.37rem;
@@ -89,6 +86,14 @@
         font-size: 1rem;
         gap: 0.8rem;
     }
+
+    .link_list_social_item img{
+        display: flex;
+        width: 1.90rem;
+        flex-direction: row;
+    }
+
+   
 
 }
 
@@ -131,10 +136,21 @@
 
     .link_list_social{
         display: flex;
-        gap: 1rem;
-        font-size: 0.87rem;
+        gap: 3rem;
+        padding-top: 1rem;
         flex-direction: row;
-        font-weight: medium;
+    
+    }
+
+    .link_list_social_item img{
+        display: flex;
+        width: 1.50rem;
+        flex-direction: row;
+    }
+
+    .curriculo img {
+        display: flex;
+        width: 1.59rem;
     }
 
     .curriculo{

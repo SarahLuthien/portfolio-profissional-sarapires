@@ -26,6 +26,7 @@ a:hover{
 
 .logo{
     height: 2rem;
+       
 } 
 
 .menu_list_item:nth-child(1),
@@ -44,6 +45,7 @@ a:hover{
     border-radius: 10px;
     padding: 4px 20px 4px 20px;
     color: var(--cor-clara);
+    box-shadow: 5px 5px 10px black;
 }
 
 #cv:hover{

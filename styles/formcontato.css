@@ -1,0 +1,128 @@
+
+.form_contato{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem 3rem;
+  padding: 2rem;
+  gap: 2rem;
+  background: url("/assets/pattern.png");
+  background-repeat: no-repeat;
+  background-position: end;
+  box-shadow: 10px 10px 20px black;
+  border-radius: 20px;
+ 
+}
+
+
+  /* Estilizando o formulário */
+  .form {
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  
+  .formcontato__text{
+    text-align: center;
+    gap: 2rem;
+    
+  }
+  
+  
+
+.formcontato--esquerda{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  4rem 1rem;
+  filter:drop-shadow(5px 5px 2px #9024b6)
+
+}
+
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #9024b6;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #9024b6;
+    border-radius: 20px;
+    box-sizing: border-box;
+    resize: none;
+  }
+  
+  .submit {
+    background-color: #9024b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #611b7a;
+  }
+  
+  /* Estilizando a barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #9024b6;
+  }
+
+  /*Tablet*/
+@media (min-width:768px){
+ 
+
+}
+
+/*Computador*/
+@media (min-width: 1440px){
+
+  
+.form_contato{
+  display: flex;
+  width: 50%;
+  margin: 4rem 10rem 10rem 30rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  gap: 2rem;
+  background: url("/assets/pattern.png");
+  background-repeat: no-repeat;
+  background-position: end;
+  box-shadow: 10px 10px 20px black;
+  border-radius: 20px;
+ 
+}
+
+  .form {
+    display: flex;
+    border-radius: 20px;
+    margin: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  
+}

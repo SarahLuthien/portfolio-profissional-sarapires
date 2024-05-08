@@ -5,7 +5,7 @@
     align-items: right;
     flex-direction: column;
     gap: 2rem;
-    background-color: var(--cor-background);
+    background: linear-gradient(96.48deg, #9024b6 36.3%, #6e2d68 99.56%);
 }
 
 .title_about{
