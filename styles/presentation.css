@@ -243,19 +243,17 @@
     }
 
     .titulo_apresentacao{
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: bold;
         color: var(--cor-secundaria);
     }
 
     .typing{
         width: 100%;
-        animation: typing 2s steps(10), blink .5s step-end infinite alternate;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
-        border-right: 3px solid;
-        font-size: 1rem;
-        font-weight: bold;
+        border-right: 1px solid;
     }
     
     @keyframes typing{
@@ -340,15 +338,7 @@
     }
     
     #link_list_social_image {
-        position: end;
-        top: 0.45em;
-        right: 0.5em;
-        margin: 0;
-        padding: 0;
-        opacity: 0;
-        transition: 0.5s;
-        height: 1em;
-        fill: #fff;
+        display: none;
     }
     
     .link_list_social_item:hover  #link_list_social_text{

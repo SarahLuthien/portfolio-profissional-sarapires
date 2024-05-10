@@ -10,8 +10,8 @@
     font-weight: bold;
     text-align: center;
     color: var(--cor-secundaria);
-
 }
+
 
 .skills__line{
     display: flex;
@@ -24,6 +24,7 @@
 
 .skills__box_um{
     background-color: #9024b6;
+    color: #ffff;
     background-size: 100%;
     border-radius: 20px;
     box-shadow: 5px 5px 15px black;
@@ -88,6 +89,7 @@
     
     }
 
+   
     .skills__line{
         display: flex;
         gap: 4rem;
