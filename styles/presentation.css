@@ -22,7 +22,7 @@
 
 }
 
-/* .typing{
+.typing{
     width: 88%;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
 
@@ -43,7 +43,7 @@
     50%{
         border-color: transparent;
     }
-} */
+}
 
 .titulo_apresentacao{
     font-size: 2.8rem;

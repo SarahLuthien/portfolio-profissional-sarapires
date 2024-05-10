@@ -23,10 +23,10 @@ ul{
     
 }
 
-/* a{
+a{
     text-decoration: none;
     color: var(--cor-secundaria);
-} */
+}
 
 a:hover{
     color: var(--cor-principal);
