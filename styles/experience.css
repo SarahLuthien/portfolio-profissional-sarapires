@@ -16,7 +16,7 @@
 
 .experience__info{
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     flex-direction: column;
 }
 
@@ -53,50 +53,104 @@
     width: 100%;
 }
 
+.experience__description{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.experiencia__botao--demo {
+    background: #c5c5c5;
+    border: 1.5px solid #9024b6;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-0deg);
+    filter:drop-shadow(3px 5px 1px #c5c5c5)
+  }
+  
+  .experience__repo {
+    display: inline-block;
+    transform: skew(21deg);
+    
+  }
+  
+  .experiencia__botao--demo::before {
+    content: '';
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #9024b6;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .experiencia__botao--demo:hover {
+    color: #fff;
+  }
+  
+  .experiencia__botao--demo:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
 
 .experiencia__botao--repo {
-    display: inline-block;
-    padding: 10px 20px;
     background-color: #9024b6;
-    color: white;
+    border: 1.5px solid #c5c5c5;
+    color: #fff;
     text-align: center;
-    text-decoration: none;
     border-radius: 5px;
-    border-color: #9024b6;
-    transition: background-color 0.3s;
-    filter:drop-shadow(3px 5px 1px #9024b6)
+    padding: 10px 10px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    filter:drop-shadow(3px 5px 1px #9024b6);
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-22deg);
+  }
+  
+ .experience__repo {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+.experiencia__botao--repo::before {
+    content: '';
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #c5c5c5;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
   }
   
   .experiencia__botao--repo:hover {
-    background-color: #948692;
-  }
-
-.experiencia__botao--demo {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #c5c5c5;
     color: black;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    border-color: #c5c5c5;
-    transition: background-color 0.3s;
-    filter:drop-shadow(3px 5px 1px #c5c5c5)
-}
-
-.experiencia__botao--demo:hover {
-    background-color: #9565ac
-}
-
-
-
-/*Tablet*/
-@media (min-width:768px){
-
-
-    
-}
+  }
+  
+  .experiencia__botao--repo:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
 
 
 /*Computador*/
@@ -141,6 +195,40 @@
         display: flex;
         height: 25rem;
         width: 50%;
+    }
+
+    .experiencia__botao--demo{
+      background: #c5c5c5;
+      border: 1.5px solid #9024b6;
+      text-align: center;
+      color: black;
+      border-radius: 5px;
+      padding: 10px 10px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      width: 120px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transform: skew(-0deg);
+      filter:drop-shadow(3px 5px 1px #c5c5c5)
+    }
+
+    .experiencia__botao--repo{
+      background-color: #9024b6;
+      border: 1.5px solid #c5c5c5;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px 10px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      filter:drop-shadow(3px 5px 1px #9024b6);
+      width: 120px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transform: skew(-22deg);
     }
 
 }

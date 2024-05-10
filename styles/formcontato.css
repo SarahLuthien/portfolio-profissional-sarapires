@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   margin: 1rem 1rem 3rem;
-  padding: 2rem;
+  padding: 1.5rem;
   gap: 2rem;
   background: url("/assets/pattern.png");
   background-repeat: no-repeat;
@@ -14,7 +14,6 @@
   border-radius: 20px;
  
 }
-
 
   /* Estilizando o formulário */
   .form {
@@ -27,19 +26,24 @@
   
   .formcontato__text{
     text-align: center;
+    font-size: 0.8rem;
     gap: 2rem;
     
   }
-  
-  
+
 
 .formcontato--esquerda{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:  4rem 1rem;
-  filter:drop-shadow(5px 5px 2px #9024b6)
+  padding:  0 0 2rem 0;
 
+}
+
+.logo_animado{
+  display: flex;
+  height: 18.75rem;
+  border-radius: 20px;
 }
 
   
@@ -100,8 +104,8 @@
   
 .form_contato{
   display: flex;
-  width: 50%;
-  margin: 4rem 10rem 10rem 30rem;
+  width: 40%;
+  margin: 4rem 10rem 10rem 35rem;
   justify-content: center;
   align-items: center;
   padding-top: 5rem;
@@ -123,6 +127,11 @@
     justify-content: center;
     align-items: center;
  
+  }
+
+  .formcontato__text{
+    font-size: 1rem;
+   
   }
   
 }

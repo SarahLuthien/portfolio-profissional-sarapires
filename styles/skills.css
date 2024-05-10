@@ -23,32 +23,33 @@
 }
 
 .skills__box_um{
-    background-image: url("/assets/rectangle.png");
-    background-repeat: no-repeat;
     background-color: #9024b6;
     background-size: 100%;
     border-radius: 20px;
-    box-shadow: 10px 10px 15px black;
+    box-shadow: 5px 5px 15px black;
     width: 13rem;
     padding: 1rem;
-    transition: 3s;
-    transform: scale(1.0); 
 }
 
+.skills__box_um {animation: bounce 2s infinite; }
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    40% {transform: translateY(-20%);}
+    60% {transform: translateY(-10%);}
+}
 
 
 .skills__box_dois{
-    background-image: url("/assets/rectangle_white.png");
-    background-repeat: no-repeat;
+    background-color: rgb(199, 197, 197);
     border-radius: 20px;
     background-size: 100%;
-    box-shadow: 10px 10px 15px black;
+    box-shadow: 5px 5px 15px black;
     width: 13rem;
     padding: 1rem;  
-    transition: 3s;
-    transform: scale(1.0);  
 
 }
+
 
 .skills__name{
     font-weight: bold;
