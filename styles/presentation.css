@@ -281,14 +281,13 @@
         flex-direction: column;
         justify-content: space-around;
         flex-wrap: wrap;
-        padding: 4rem 1rem;
+        padding: 3rem 1rem;
         margin: 0;
     }
 
     .foto_perfil{
-        height: 7.12rem;
+        height: 7rem;
         margin-top: 2rem;
-        padding: 0 0 1rem;
     }
 
     .container_texto{
