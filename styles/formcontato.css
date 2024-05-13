@@ -53,22 +53,24 @@
 
   
   .input {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 5px 0;
     border: 2px solid #9024b6;
     border-radius: 20px;
     box-sizing: border-box;
+    opacity: 0.8;
   }
   
   .textarea {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #9024b6;
+    border: 2px solid #9024b6;
     border-radius: 20px;
     box-sizing: border-box;
     resize: none;
+    opacity: 0.8; 
   }
   
   .submit {
@@ -79,6 +81,27 @@
     border-radius: 20px;
     cursor: pointer;
   }
+
+  .submit.ativa,
+.submit:active {
+  background-color: #f1f1f1;
+  border: 2px solid #9024b6;
+  box-shadow: 3px 3px 0 #611b7a inset;
+  color: black;
+  outline: none;
+} 
+
+.submit.focus,
+.submit:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px rgb(248, 185, 248);
+}
+
+.submit.active:focus,
+.submit:active:focus {
+  box-shadow: 3px 3px 0 #611b7a  inset, 1px 1px 10px rgb(248, 185, 248);
+}
+
   
   .submit:hover {
     background-color: #611b7a;

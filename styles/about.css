@@ -9,7 +9,11 @@
 }
 
 .title_about{
-    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal; 
+    text-align: center;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -29,11 +33,16 @@
     .about{
         display: flex;
         padding: 1rem 1rem;
+
     }
 
     .title_about{
-        font-size: 1.38rem;
-        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 3px #9024b6;   
+        font-family: "Poppins", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        font-style: normal; 
     }
 
     .about_paragraph{
@@ -53,8 +62,10 @@
     }
 
     .title_about{
-        font-size: 1.38rem;
-        font-weight: bold;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.2rem;
+       
     }
 
     .about_paragraph{

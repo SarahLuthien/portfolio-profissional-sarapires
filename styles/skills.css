@@ -6,10 +6,12 @@
 }
 
 .titulo_skills{
-    font-size: 1.37rem;
-    font-weight: bold;
     text-align: center;
-    color: var(--cor-secundaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal; 
+    font-size: 1.3rem;
+    
 }
 
 
@@ -29,7 +31,9 @@
     border-radius: 20px;
     box-shadow: 5px 5px 15px black;
     width: 13rem;
-    padding: 1rem;
+    padding: 2rem;  
+    opacity: 0.9; 
+    align-items: center;
 }
 
 .skills__box_um {animation: bounce 2s infinite; }
@@ -47,8 +51,9 @@
     background-size: 100%;
     box-shadow: 5px 5px 15px black;
     width: 13rem;
-    padding: 1rem;  
-
+    padding: 2rem;  
+    opacity: 0.9; 
+    align-items: center;
 }
 
 
@@ -96,8 +101,8 @@
     }
 
     .titulo_skills{
-        font-size: 2rem;
         text-align: center;
+        font-size: 1.8rem;
     
     }
 }

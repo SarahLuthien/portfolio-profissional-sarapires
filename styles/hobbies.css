@@ -6,10 +6,12 @@
 }
 
 .titulo_hobbies{
-    font-size: 1.37rem;
-    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal; 
     text-align: center;
-    color: var(--cor-secundaria);
+    font-style: bold; 
+    font-size: 1.3rem;
 
 }
 
@@ -29,8 +31,9 @@
     border-radius: 20px;
     box-shadow: 5px 5px 15px black;
     width: 13rem;
-    padding: 1rem;
-    
+    padding: 2rem;  
+    opacity: 0.9; 
+    align-items: center;
 }
 
 
@@ -40,7 +43,9 @@
     background-size: 100%;
     box-shadow: 5px 5px 15px black;
     width: 13rem;
-    padding: 1rem;  
+    padding: 2rem;  
+    opacity: 0.9; 
+    align-items: center;
 
 }
 
@@ -94,7 +99,7 @@
     }
 
     .titulo_hobbies{
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
     
     }

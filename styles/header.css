@@ -34,7 +34,7 @@ a:hover{
 
 
 .logo{
-    height: 2rem;
+    height: 1.7rem;
        
 } 
 
@@ -58,11 +58,33 @@ a:hover{
 }
 
 #cv:hover{
-    background-color: #f4f4f4;
+    background-color: rgb(248, 185, 248);
     color: var(--cor-secundaria);
     font-weight: 600;
     border: 2px solid #9024b6
 }
+
+
+#cv.ativa,
+#cv:active {
+  background-color:  #611b7a;
+  border: 2px solid #9024b6;
+  box-shadow: 3px 3px 0 #611b7a inset;
+  color: #ffff;
+  outline: none;
+} 
+
+#cv.focus,
+#cv:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px rgb(248, 185, 248);
+}
+
+#cv.active:focus,
+#cv:active:focus {
+  box-shadow: 3px 3px 0 #611b7a  inset, 1px 1px 10px rgb(248, 185, 248);
+}
+
 
 .menu_list_contato{
     display: flex;
@@ -88,7 +110,7 @@ a:hover{
     
 
     .logo{
-        height: 2rem;
+        height: 1.7rem;
     }
 
     .menu_list{
@@ -123,7 +145,7 @@ a:hover{
 
 
     .logo{
-        height: 3rem;
+        height: 2.3rem;
     }
 
  

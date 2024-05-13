@@ -21,10 +21,11 @@
 }
 
 .experience__section__title{
-    font-size: 1.37rem;
-    font-weight: bold;
-    text-align: center;
-    color: var(--cor-secundaria);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal; 
+  font-size: 1.2rem;
 }
 
 .experience__title{
@@ -67,7 +68,7 @@
     border-radius: 5px;
     padding: 10px 10px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     width: 120px;
     text-transform: uppercase;
@@ -114,7 +115,7 @@
     border-radius: 5px;
     padding: 10px 10px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     filter:drop-shadow(3px 5px 1px #9024b6);
     width: 120px;
@@ -165,7 +166,7 @@
     }
 
     .experience__section__title{
-        font-size: 2rem;
+      font-size: 1.8rem;
         font-weight: bold;
     
     }
