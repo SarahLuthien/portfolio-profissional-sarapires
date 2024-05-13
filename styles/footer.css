@@ -9,3 +9,17 @@
     justify-content: center;
     align-items: center;
   }
+
+  .whatsapp{
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+  }
+
+  .whatsapp {animation: bounce 2s infinite; }
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    40% {transform: translateY(-20%);}
+    90% {transform: translateY(0);}
+}

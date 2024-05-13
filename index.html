@@ -15,8 +15,9 @@
 
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>Portfólio Sara Pires</title>
-    
+
 </head>
+
 <body>
     <!-- Sessão cabeçalho -->
     <header>
@@ -47,7 +48,7 @@
                <h4><img  class="foto_perfil" src="assets/Foto_perfil2.png" alt="foto_perfil"></h4> 
                 <div class="container_texto">
                     <div class="typing">
-                        <h2 class="titulo_apresentacao">Olá, me chamo Sara Pires e sou desenvolvedora Web!<a name="sobremim"></a></h2>
+                        <h2 class="titulo_apresentacao">Olá! Me chamo Sara Pires...<a name="sobremim"></a></h2>
                     </div>
                     <h3 class="subtitulo_apresentacao">Sou graduanda em Análise e Desenvolvimento de Sistemas e atualmente estou participando do curso de Especialização em Desenvolvimento Front-End pela Oracle-ONE ministrado pela Alura.</h3>
                     <ul class="link_list_social">
@@ -277,17 +278,27 @@
                 <div class="formcontato__text">
                     <h2 class="formcontato__title" id="#contato"> CONTACTE-ME</h2>
                     <form class="formcontato__form" id="meuFormulario">
-                        <input class="input" type="text" id="nome" placeholder="Nome" required>
-                        <input class="input" type="email" id="email" placeholder="Email">
-                        <input class="input" type="text" id="assunto" placeholder="Assunto">
+                        <div>
+                            <input class="input" type="text" id="nome" placeholder="Nome" required>
+                            <div id="validacao_nome"></div>
+                        </div>
+                        <div>
+                            <input class="input" type="email" id="email" placeholder="Email">
+                            <div id="validacao_email"></div>
+                        </div>
+                        <div>
+                            <input class="input" type="text" id="assunto" placeholder="Assunto">
+                            <div id="validacao_assunto"></div>
+                        </div>
                         <textarea class="textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua Mensagem..."></textarea>
                         <button class="submit" onclick="meuFormulario()">Enviar Mensagem</button>
                     </form>
                         
-                    </div>
+                    </div>   
                 </div>
             </section>
 
+            <div class="whatsapp"><a href="http://wa.me/5579981332842"><img src="/assets/logo_zap.png" alt="logo_whathsapp"></a></div>    
            
             <!-- Sessão de Footer/Rodapé-->
             <section class="footer">
