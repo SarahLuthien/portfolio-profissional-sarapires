@@ -1,34 +1,32 @@
 .about{
     display: flex;
     justify-content: space-around;
-    padding: 4rem;
+    padding: 1rem 1rem;
     align-items: right;
     flex-direction: column;
     gap: 2rem;
     background: linear-gradient(96.48deg, #9024b6 36.3%, #6e2d68 99.56%);
 }
 
+.about_paragraph{
+    font-size: 0.87rem;
+    font-weight: 400;  
+    color: var(--cor-clara);
+}
+
+
 .title_about{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal; 
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
-.about_paragraph{
-    font-size: 1rem;
-    font-weight: 400; 
-    white-space: wrap;
-    color: var(--cor-clara);
-     
-}
-
-
 
 /*Tablet*/
-@media (max-width: 768px){
+@media (min-width: 768px){
     
     .about{
         display: flex;
@@ -37,12 +35,8 @@
     }
 
     .title_about{
-        text-align: center;
-        text-shadow: 2px 2px 3px #9024b6;   
-        font-family: "Poppins", sans-serif;
-        font-size: 1.8rem;
-        font-weight: 600;
-        font-style: normal; 
+        font-size: 1.5rem;
+
     }
 
     .about_paragraph{
@@ -55,24 +49,22 @@
 }
 
 /*Mobile*/
-@media (max-width: 425px){
+@media (min-width: 1440px){
+
     .about{
         display: flex;
-        padding: 1rem 1rem;
+        padding: 4rem;
     }
-
+    
     .title_about{
-        text-align: center;
-        font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
        
     }
 
-    .about_paragraph{
-        font-size: 0.87rem;
-        font-weight: 400;  
-        color: var(--cor-clara);
-    }
-
+    
+.about_paragraph{
+    font-size: 1rem;
+     
+}
 
 }
