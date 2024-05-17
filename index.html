@@ -69,11 +69,16 @@
          <!--Sessão About-->
         <section class="about">
             <h3 class="title_about">Sobre Mim</h3>
-            <p class="about_paragraph">Olá, aqui eu vou contar um pouco da minha história. Eu fazia nível superior em Enfermagem e por não ter me identificado com área, 
-                eu tranquei o curso no penúltimo período, foi uma decisão difícil mas o fiz. Após o trancamento eu fiquei um tempo em hiato nos estudos, veio a pandemia e outros problemas. Descobri que estava gestante do meu segundo filho e com isso, me veio um ímpeto e a necessidade de buscar novos horizontes. Me sugiu a ideia de pesquisar as áreas que eu poderia atuar.
-                <br>Sempre gostei de estar antenada nos assuntos de tecnologia, adoro jogar, porém nunca me vi nessa área por ter a ideia erronea de que era uma área masculina.
-                Pesquisando mais sobre a área, tive a oportunidade de conhecer melhor o universo feminino de TI, através de um programa de mentoria o It For Girls ed. 2023 da NTT ltd, que  me deu um norte e outra visão do cenário feminino nessa área. 
-                Consegui uma bolsa de estudos de especialização Front-End pela ONE-Oracle. Após conseguir a bolsa através de um processo seletivo, decidi mergulhar de vez, juntamente com o curso de programção,  iniciei o meu curso superior na área.</p>
+            <p class="about_paragraph">
+            Aqui irei contar um pouco sobre mim. Sempre trabalhei na área de atendimento ao público e nesse trabalho, tive a oportunidade de conhecer melhor o universo de desenvolvimento, ajudando o setor a melhorar a experiência dos colaboradores, no uso dos sites que utilizávamos para realizar o atendimento. 
+            Foi uma experiência maravilhosa e queria aprender mais sobre essa área, porém não tive uma oportunidade. 
+            Cursava Bacharel em Enfermagem, e no sétimo período, decidi trancar o curso, pois não estava me identificando com área. 
+            Ao final da pandemia descobri que estava gestante do meu segundo filho, um sinal de esperança em meio a um caos. 
+            Junto a esse sentimento, cresceu uma necessidade dentro de mim em buscar novos horizontes. 
+            E então surgiu uma oportunidade de conhecer mais sobre o universo feminino na área de tecnologia, através de um programa de mentoria, o It For Girls ed. 2023 da NTT ltd, que me deu um norte e outra visão do cenário feminino em TI. 
+            Através de um processo seletivo desse mesmo programa de mentoria, conquistei uma bolsa de estudos de especialização Front-End pela ONE-Oracle. Juntamente com esse curso de especialização, iniciei o curso superior em TI. 
+            Essa oportunidade de estudos possibilitou de continuar trilhando o caminho de desenvolvimento e aperfeiçoamento.
+            </p>
             <p class="about_paragraph">Sou mãe de dois, um uma pessoa caseira e muito família. Sou apaixonada pelo o que eu faço e estudo, adoro resolver desafios de maneira criativa e inovadora. Tenho muita vontade de viajar, conhecer o mundo e suas mais diversas culinárias.</p>
         </section>
 
@@ -279,15 +284,15 @@
                     <h2 class="formcontato__title" id="#contato"> CONTACTE-ME</h2>
                     <form class="formcontato__form" id="meuFormulario">
                         <div>
-                            <input class="input" type="text" id="nome" placeholder="Nome" required>
+                            <input class="input" type="text" id="nome" minlength="3" placeholder="Nome">
                             <div id="validacao_nome"></div>
                         </div>
                         <div>
-                            <input class="input" type="email" id="email" placeholder="Email">
+                            <input class="input" type="email" id="email" minlength="4" placeholder="Email" >
                             <div id="validacao_email"></div>
                         </div>
                         <div>
-                            <input class="input" type="text" id="assunto" placeholder="Assunto">
+                            <input class="input" type="text" id="assunto" minlength="3" placeholder="Assunto" >
                             <div id="validacao_assunto"></div>
                         </div>
                         <textarea class="textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua Mensagem..."></textarea>
