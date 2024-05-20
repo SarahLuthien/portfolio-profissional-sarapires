@@ -19,7 +19,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: end;
-  box-shadow: 2px 2px 10px black;
+  box-shadow: 2px 2px 10px var(--cor-principal);
   border-radius: 20px;
 }
 
@@ -34,8 +34,8 @@
   
   .formcontato__title{
     font-size: 0.8rem;
-    color: #f1f1f1;
-    text-shadow: 2px 2px 10px #9024b6;
+    color: var(--cor-secundaria);
+    text-shadow: 1px 1px 5px var(--cor-principal);
     padding-bottom: 1rem;
   }
 
@@ -59,7 +59,7 @@
     flex-direction: column;
     padding: 10px;
     margin: 5px 0;
-    border: 2px solid #9024b6;
+    border: 2px solid var(--cor-principal);
     border-radius: 20px;
     box-sizing: border-box;
     opacity: 0.8;
@@ -74,7 +74,7 @@
     width: 90%;
     padding: 10px;
     margin: 5px 0;
-    border: 2px solid #9024b6;
+    border: 2px solid var(--cor-principal);
     border-radius: 20px;
     box-sizing: border-box;
     resize: none;
@@ -82,8 +82,8 @@
   }
   
   .submit {
-    background-color: #9024b6;
-    color: white;
+    background: var(--cor-principal);
+    color: var(--cor-clara);
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -92,10 +92,10 @@
 
   .submit.ativa,
   .submit:active {
-  background-color: #f1f1f1;
-  border: 2px solid #9024b6;
+  background-color: var(--cor-clara);
+  border: 2px solid var(--cor-secundaria);
   box-shadow: 3px 3px 0 #611b7a inset;
-  color: black;
+  color: var(--cor-clara);
   outline: none;
 } 
 
@@ -115,18 +115,6 @@
     background-color: #611b7a;
   }
   
-  /* Estilizando a barra de rolagem */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #9024b6;
-  }
 
   /*Tablet*/
 @media (min-width:768px){

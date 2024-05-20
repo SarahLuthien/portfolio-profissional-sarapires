@@ -1,6 +1,7 @@
 
 .container_cabecalho{
     display: flex;
+    background: var(--cor-escura);
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -9,12 +10,8 @@
     padding: 0.2rem 1rem;    
 }
 
-ul{
+ul, li{
     list-style: none;
-}
-
-nav ul{
-    background-color: #f4f4f4;
 }
 
 
@@ -34,46 +31,12 @@ nav ul{
 }
 
 
-#cv{
-    border-radius: 5px;
-    color: var(--cor-clara);
-}
-
-#cv:hover{
-    background-color: #ffff;
-    color: var(--cor-secundaria);
-    box-shadow: 3px 3px 0 #611b7a;
-    font-weight: 600;
-    border: 2px solid #9024b6
-}
-
-
-#cv.ativa,
-#cv:active {
-  background-color:  #611b7a;
-  border: 2px solid #9024b6;
-  box-shadow: 3px 3px 0 #611b7a inset;
-  color: #ffff;
-  outline: none;
-} 
-
-#cv.focus,
-#cv:focus {
-  outline: none;
-  box-shadow: 1px 1px 10px rgb(248, 185, 248);
-}
-
-#cv.active:focus,
-#cv:active:focus {
-  box-shadow: 3px 3px 0 #611b7a, 1px 1px 10px rgb(248, 185, 248);
-}
-
-
-.menu_list_contato{
+.menu_list_contato a{
     display: flex;
     font-size: 0.98rem;
     white-space: nowrap;
     font-weight: bold; 
+    color: var(--cor-secundaria);
 }
 
 
@@ -110,6 +73,15 @@ nav ul{
         font-size: 1.2rem;
     }
 
+    #cv{
+        border-radius: 20px;
+        padding: 0.4rem;
+        color: var(--cor-escura);
+        background-color: var(--cor-secundaria);
+    }
+    
+   
+
 }
 
 
@@ -144,7 +116,7 @@ nav ul{
     }
 
     nav ul{
-        background-color: #9024b6;
+        background-color: var(--cor-principal);
         border-radius: 15px;
         gap: 1.2rem; 
         padding: 1rem;
@@ -162,7 +134,7 @@ nav ul{
     }
     
     .menu_list_item a{
-        color: #ffff;
+        color: var(--cor-clara);
         text-decoration: none;
         display: block;
     }
@@ -172,7 +144,7 @@ nav ul{
         line-height: inherit;
         text-decoration: none;
         cursor: pointer;
-        color: var(--cor-secundaria);
+        color: var(--cor-terciaria);
     }
     
     .container_cabecalho{
@@ -181,7 +153,7 @@ nav ul{
     }
     
     .menu_list_item:hover > a {
-        border: 2px solid #ffff;
+        border: 2px solid var(--cor-clara);
         padding: 5px;
         border-radius: 5px;
     }
@@ -197,7 +169,44 @@ nav ul{
 }
 
     .menu_list_contato{
-        font-size: 1rem;
+        font-size: 1rem;          
+    }
+
+    #cv{
+        border-radius: 10px;
+        padding: 0;
+        color: var(--cor-clara);
+        background-color: var(--cor-principal);
+    }
+    
+    #cv:hover{
+        background-color: var(--cor-escura);
+        padding: 0.5rem;
+        color: var(--cor-secundaria);
+        box-shadow: 3px 3px 0 #611b7a;
+        font-weight: 600;
+        border: 2px solid var(--cor-principal);
+    }
+    
+    
+    #cv.ativa,
+    #cv:active {
+      background-color:  #611b7a;
+      border: 2px solid var(--cor-principal);
+      box-shadow: 3px 3px 0 #611b7a inset;
+      color: var(--cor-escura);
+      outline: none;
+    } 
+    
+    #cv.focus,
+    #cv:focus {
+      outline: none;
+      box-shadow: 1px 1px 10px rgb(248, 185, 248);
+    }
+    
+    #cv.active:focus,
+    #cv:active:focus {
+      box-shadow: 3px 3px 0 #611b7a, 1px 1px 10px rgb(248, 185, 248);
     }
         
 }

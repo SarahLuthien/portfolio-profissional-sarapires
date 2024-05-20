@@ -1,8 +1,10 @@
 .footer {
     width: 100%;
     height: 104px;
+    gap: 1rem;
+    flex-direction: column;
     background: linear-gradient(96.48deg, #9024b6 36.3%, #520486 99.56%);
-    color: #f4f4f4;
+    color: var(--cor-clara);
     margin-top: 1rem;
     text-align: center;
     display: flex;
@@ -16,10 +18,9 @@
     padding: 1rem;
   }
 
-  .whatsapp {animation: bounce 2s infinite; }
+  .whatsapp {animation: rotate 0.8s infinite; }
 
-@keyframes bounce {
+  @keyframes rotate {
     0% {transform: translateY(0);}
-    40% {transform: translateY(-20%);}
-    90% {transform: translateY(0);}
+    90% {transform: translateY(-10%);}
 }

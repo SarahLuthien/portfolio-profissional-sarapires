@@ -15,18 +15,21 @@ padding: 0%;
 } 
 
 :root{
-    --cor-principal: #9024B6;
-    --cor-secundaria: #000000;
-    --cor-clara: #eeeeee;
-    --cor-background: #9024b6;
+    --cor-principal: rgb(144, 36, 182);
+    --cor-secundaria: rgb(172, 91, 200);
+    --cor-terciaria: rgb(227, 200, 237);
+    --cor-clara: rgb(255, 255, 255);
+    --cor-escura: #000000;
 
 }
 
 
 body{
     box-sizing: border-box;
-    font-family: 'Raleway';
-    background-color: #f4f4f4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--cor-escura);
     line-height: 1;
     color: var(--cor-secundaria);
     overflow-x: hidden;
@@ -36,3 +39,16 @@ main{
     display: flex;
     flex-direction: column;
 }
+
+  /* Estilizando a barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--cor-escura);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--cor-principal);
+  }
