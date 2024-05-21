@@ -4,7 +4,7 @@
 <p>Quer conhecer um pouco mais sobre mim e ver alguns dos meus projetos?</p>
 
 <div>
-  <img src="https://i.postimg.cc/8zjhYqhB/badge-challenge-one.png"
+<!--   <img src="https://i.postimg.cc/8zjhYqhB/badge-challenge-one.png" -->
 </div>
 
 ## :rocket: Tecnologias
