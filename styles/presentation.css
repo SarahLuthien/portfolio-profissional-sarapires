@@ -31,8 +31,25 @@
 .typing{
     width: 80%;
     animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
     border-right: 3px solid var(--cor-escura);
+    text-shadow: 2px 2px 3px var(--cor-principal);  
 }
+
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
 
 .subtitulo_apresentacao{
     font-size: 0.87rem;
@@ -132,6 +149,7 @@
         border-right: 3px solid var(--cor-escura);
         
     }
+
 
     .subtitulo_apresentacao{
         font-size: 1.2rem;
