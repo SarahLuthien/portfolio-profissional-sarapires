@@ -218,8 +218,10 @@
 
     .experience__video{
         display: flex;
-        height: 25rem;
-        width: 650px;
+        border: 1px solid var(--cor-escura);
+        box-shadow: 1px 1px 6px 5px var(--cor-principal);
+        height: 40rem;
+        width: 1000px;
     }
 
     .experiencia__botao--demo{
