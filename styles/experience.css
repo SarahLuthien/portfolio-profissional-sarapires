@@ -4,15 +4,14 @@
     gap: 1rem;
     padding: 2rem 1rem;
     text-align: left;
-    padding-top: 9rem;
+    padding-top: 7rem;
     
 }
 
 .experiencie__box{
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
-   
+    gap: 1.4rem;   
 }
 
 .experience__info{
@@ -44,7 +43,8 @@
 .experience__sub{
     font-size: 0.77rem;
     font-weight: medium;
-    color: var(--cor-secundaria);
+    color: var(--cor-clara);
+    line-height: 15px;
 
 }
 
@@ -52,6 +52,13 @@
     display: flex;
     height: 25rem;
     width: 100%;
+}
+
+
+.experience__img{
+  display: flex;
+  margin-top: 2rem;
+  max-width: 50rem;
 }
 
 .experience__description{
@@ -169,10 +176,14 @@
     width: 600px;
 }
 
+.experience__img{
+  margin-top: 2rem;
+  min-width: 40rem;
+}
+
 .experience__section__title{
   font-size: 1.5rem;
 }
-
 
 }
 
@@ -183,7 +194,7 @@
     .experiencie__box{
         display: flex;
         margin-top: 2rem;
-        padding: 4rem 4rem;
+        padding: 1rem 4rem;
         flex-direction: row;
         gap: 2rem;
        
@@ -204,24 +215,29 @@
 
     .experience__text{
         font-size: 1rem;
-        font-weight: medium;
-        color: var(--cor-secundaria);
-    
+        font-weight: medium; 
     }
 
     .experience__sub{
         font-size: 0.90rem;
         font-weight: medium;
-        color: var(--cor-secundaria);
-    
+        line-height: 20px;   
     }
 
     .experience__video{
         display: flex;
         border: 1px solid var(--cor-escura);
-        box-shadow: 1px 1px 6px 5px var(--cor-principal);
+        box-shadow: 1px 1px 4px 3px var(--cor-principal);
         height: 40rem;
         width: 1000px;
+    }
+
+    .experience__img{
+      display: flex;
+      margin-top: 2rem;
+      max-width: 64rem;
+      border: 1px solid var(--cor-escura);
+      box-shadow: 1px 1px 4px 3px var(--cor-principal);
     }
 
     .experiencia__botao--demo{

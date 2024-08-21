@@ -5,10 +5,18 @@
     flex-wrap: wrap;
     padding: 3rem 1rem;
     margin: 0;
+  
 }
 
+
 .foto_perfil{
-    height: 7rem;
+    display: block;
+    height: 10rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px 2px rgb(139, 4, 133); 
+    filter: brightness(0.95);
+    margin-bottom: 1.4rem; 
     margin-top: 3rem;
 }
 
@@ -24,7 +32,7 @@
 
 .titulo_apresentacao{
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--cor-secundaria);
 }
 
@@ -34,7 +42,7 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid var(--cor-escura);
-    text-shadow: 2px 2px 3px var(--cor-principal);  
+    
 }
 
 
@@ -159,7 +167,8 @@
 
     .foto_perfil{
         display: flex;
-        height: 9.12rem;
+        height: 15rem;
+        margin-bottom: 3rem;
     }
 
     .curriculo{
@@ -201,8 +210,8 @@
 
 .foto_perfil{
     display: flex;
-    height: 20rem;
-    
+    height: 30rem;
+    width: 30rem;
 }
 
 
@@ -212,11 +221,11 @@
     text-align: left;
     gap: 2rem;
     align-self: start;
-    margin: 90px 0px;
+    margin: 200px 0px;
 }
 
 .titulo_apresentacao{ 
-    font-weight: bold;
+    font-weight: 200;
     color: var(--cor-secundaria);
     gap: 1rem;
 }
@@ -228,7 +237,7 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid var(--cor-escura);
-    text-shadow: 2px 2px 3px var(--cor-principal);   
+    text-shadow: 2px 2px 3px rgb(56, 23, 56);   
     
 }
 

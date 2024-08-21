@@ -16,7 +16,7 @@ padding: 0%;
 
 :root{
     --cor-principal: rgb(144, 36, 182);
-    --cor-secundaria: rgb(172, 91, 200);
+    --cor-secundaria: #5c1294;
     --cor-terciaria: rgb(227, 200, 237);
     --cor-clara: rgb(255, 255, 255);
     --cor-escura: #000000;
@@ -40,7 +40,7 @@ main{
     flex-direction: column;
 }
 
-  /* Estilizando a barra de rolagem */
+  /* Estilização da barra de rolagem */
   ::-webkit-scrollbar {
     width: 10px;
   }

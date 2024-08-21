@@ -35,10 +35,9 @@ ul, li{
     display: flex;
     font-size: 0.98rem;
     white-space: nowrap;
-    font-weight: bold; 
+    font-weight: 500; 
     color: var(--cor-secundaria);
 }
-
 
 /*Tablet*/
 @media (min-width:768px){
@@ -62,6 +61,8 @@ ul, li{
 
     .menu_list{
         display: flex;
+        font-weight: 620;
+        letter-spacing: 2px;
     }
 
     .menu_list_item:nth-child(6){
@@ -71,6 +72,7 @@ ul, li{
 
     .menu_list_contato{
         font-size: 1.2rem;
+        font-weight: 100;
     }
 
     #cv{
@@ -130,6 +132,8 @@ ul, li{
         padding: 0;
         position: relative;
         color: var(--cor-secundaria);
+        text-shadow: 0px 1px 1px #030003;
+        font-weight: 800;
         
     }
     
@@ -144,7 +148,7 @@ ul, li{
         line-height: inherit;
         text-decoration: none;
         cursor: pointer;
-        color: var(--cor-terciaria);
+        color: var(--cor-secundaria);
     }
     
     .container_cabecalho{
@@ -175,17 +179,15 @@ ul, li{
     #cv{
         border-radius: 10px;
         padding: 0;
-        color: var(--cor-clara);
+        color: var(--cor-secundaria);
         background-color: var(--cor-principal);
     }
     
     #cv:hover{
-        background-color: var(--cor-escura);
-        padding: 0.5rem;
         color: var(--cor-secundaria);
-        box-shadow: 3px 3px 0 #611b7a;
-        font-weight: 600;
-        border: 2px solid var(--cor-principal);
+        padding: 3px;
+        line-height: 25px;
+        background: 3px rgb(19, 8, 22);
     }
     
     

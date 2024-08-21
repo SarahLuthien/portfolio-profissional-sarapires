@@ -12,6 +12,10 @@
     align-items: center;
   }
 
+.span {
+  font-size: 12px;
+}
+
   .whatsapp{
     display: flex;
     justify-content: end;

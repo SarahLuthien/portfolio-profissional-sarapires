@@ -10,8 +10,9 @@
 
 .about_paragraph{
     font-size: 0.87rem;
-    font-weight: 400;  
+    font-weight: 200;  
     color: var(--cor-clara);
+    line-height: 1.5rem;
 }
 
 
@@ -19,8 +20,13 @@
     font-weight: 600;
     text-align: center;
     font-size: 1.3rem;
-    color: var(--cor-escura);
+    color: var(--cor-secundaria);
+    text-shadow: 1px 2px 3px #030003;
     font-weight: bold;
+}
+
+.img_about{
+    height: 24px;
 }
 
 
@@ -38,16 +44,18 @@
 
     }
 
+    .img_about{
+        height: 38px;
+    }
+
     .about_paragraph{
         font-size: 0.87rem;
-        font-weight: 400;  
-        color: var(--cor-clara);
     }
     
     
 }
 
-/*Mobile*/
+/*Computador*/
 @media (min-width: 1440px){
 
     .about{
@@ -61,9 +69,9 @@
     }
 
     
-.about_paragraph{
+    .about_paragraph{
     font-size: 1rem;
      
-}
+    }
 
 }
