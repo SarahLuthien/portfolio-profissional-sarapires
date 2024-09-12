@@ -13,9 +13,8 @@
     display: block;
     height: 10rem;
     margin: 0 auto;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px 2px rgb(139, 4, 133); 
-    filter: brightness(0.95);
+    box-shadow: 2px 2px 8px 8px rgb(139, 4, 133); 
+    filter: brightness(0.9);
     margin-bottom: 1.4rem; 
     margin-top: 3rem;
 }
@@ -167,7 +166,7 @@
 
     .foto_perfil{
         display: flex;
-        height: 15rem;
+        height: 20rem;
         margin-bottom: 3rem;
     }
 
@@ -198,7 +197,7 @@
 }
 
 
-@media (min-width: 1440px){
+@media (min-width: 1342px){
 .container_apresentacao_conteudo{
     display: flex;
     padding: 5rem;
@@ -210,8 +209,8 @@
 
 .foto_perfil{
     display: flex;
-    height: 30rem;
-    width: 30rem;
+    height: 25rem;
+    width: 20rem;
 }
 
 
@@ -265,12 +264,9 @@
     color: var(--cor-principal);
 }
 
-
-
 .curriculo{
     display: none;
 }
-
 
 .link_list_social_item {
     display: flex;
