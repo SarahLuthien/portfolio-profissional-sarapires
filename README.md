@@ -2,8 +2,8 @@
 
 <h2>SOBRE: </h2>
 <p>Este projeto foi desenvolvido através de uma challenge pré requisito para a formacação Front End, do curso ONE-Oracle Next Education 2024 Turma: T6-ONE</p>
-<p>Utilizamos algumas ferramentas de auxílio de desemvolvimento como: Trello e o Figma. </p>
-<p>Quer conhecer um pouco mais sobre mim e ver alguns dos meus projetos?</p>
+<p>Utilizamos algumas ferramentas de auxílio no desenvolvimento como: Trello e o Notion. </p>
+<p>Quer conhecer um pouco mais sobre mim? Venha conhecer alguns dos meus projetos.</p>
 <p>:globe_with_meridians: Deploy:</p><a href="https://portfolio-profissional-sarapires-j5gjrcp6m.vercel.app">Clique Aqui!</a>
 
 <div>
