@@ -1,0 +1,150 @@
+/* --- Importações --- */
+@import url("reset.css");
+@import url("header.css");
+@import url("presentation.css");
+@import url("about.css");
+@import url("skills.css");
+@import url("hobbies.css");
+@import url("academic.css");
+@import url("experience.css");
+@import url("formcontato.css");
+@import url("footer.css");
+
+/* --- Variáveis Globais --- */
+:root {
+  /* Paleta de Cores Refinada */
+  --cor-fundo-principal: #0d1117;
+  --cor-fundo-secundario: #161b22;
+  --cor-borda: #30363d;
+  --cor-texto-principal: #c9d1d9;
+  --cor-texto-secundario: #8b949e;
+  --cor-destaque-principal: #a270f2;
+  --cor-destaque-secundario: #58a6ff;
+
+  /* Tipografia */
+  --fonte-titulo: "Poppins", sans-serif;
+  --fonte-corpo: "Raleway", sans-serif;
+
+  /* Espaçamento */
+  --espacamento-secao: 6rem;
+}
+
+/* --- Estilos Globais --- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cor-fundo-principal);
+  color: var(--cor-texto-principal);
+  font-family: var(--fonte-corpo);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased; /* Melhora a renderização da fonte */
+}
+
+/* Transições suaves para todas as propriedades */
+*,
+*::before,
+*::after {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Tipografia Base */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+a {
+  color: var(--cor-destaque-secundario);
+  text-decoration: none;
+  position: relative;
+}
+
+a:hover {
+  color: var(--cor-destaque-principal);
+}
+
+/* --- Layout das Seções --- */
+section {
+  padding: var(--espacamento-secao) 2rem;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+/* Estilo padrão para os títulos das seções */
+.section__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--cor-destaque-principal);
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+/* Barra de Rolagem Customizada  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-fundo-secundario);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-destaque-principal);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-destaque-secundario);
+}
+
+/* --- Responsividade Global --- */
+@media (max-width: 768px) {
+  :root {
+    --espacamento-secao: 4rem;
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --espacamento-secao: 3rem;
+  }
+  section {
+    padding: var(--espacamento-secao) 1rem;
+  }
+
+  .section__title {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}

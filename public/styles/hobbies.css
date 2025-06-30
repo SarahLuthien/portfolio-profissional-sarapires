@@ -1,0 +1,59 @@
+/* hobbies.css */
+
+.container_hobbies {
+    background-color: var(--cor-fundo-secundario);
+}
+
+/* O título já herda o estilo de .section__title de main.css */
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.hobby-card {
+    background-color: var(--cor-fundo-principal);
+    border: 1px solid var(--cor-borda);
+    border-radius: 15px;
+    width: 170px;
+    height: 150px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cor-destaque-principal);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-card img {
+    height: 50px; /* Tamanho padronizado para os ícones */
+    margin-bottom: 0.5rem;
+}
+
+.hobbies__name {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+}
+
+.hobby-card:hover .hobbies__name {
+    color: var(--cor-destaque-principal);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .hobby-card {
+        width: calc(50% - 1rem); /* 2 cards por linha no mobile */
+        height: auto;
+        padding: 1.5rem 0.5rem;
+    }
+}

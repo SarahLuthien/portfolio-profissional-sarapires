@@ -1,0 +1,27 @@
+/* footer.css */
+
+.footer {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: var(--cor-fundo-secundario);
+  color: var(--cor-texto-secundario);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+.span {
+  font-size: inherit;
+}
+
+.whatsapp {
+  display: none;
+}

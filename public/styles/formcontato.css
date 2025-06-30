@@ -1,0 +1,123 @@
+/* formcontato.css */
+
+.form_contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--espacamento-secao) 1rem;
+  background-color: var(--cor-fundo-principal);
+}
+
+.formcontato__contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem;
+  background-color: var(--cor-fundo-secundario);
+  border: 1px solid var(--cor-borda);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+}
+
+.formcontato_logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo_animado {
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.formcontato__title {
+  font-size: 1.8rem;
+  color: var(--cor-texto-principal);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.formcontato__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  background-color: var(--cor-fundo-principal);
+  color: var(--cor-texto-principal);
+  font-family: var(--fonte-corpo);
+  font-size: 1rem;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--cor-destaque-principal);
+  box-shadow: 0 0 0 2px
+    color-mix(in srgb, var(--cor-destaque-principal) 30%, transparent);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.aviso {
+  color: var(--cor-destaque-secundario);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.submit {
+  background-color: var(--cor-destaque-principal);
+  color: var(--cor-fundo-principal);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  align-self: center;
+}
+
+.submit:hover {
+  background-color: var(--cor-destaque-secundario);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .formcontato__contacto {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .formcontato_logo {
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  .formcontato__text {
+    width: 60%;
+  }
+
+  .formcontato__title {
+    text-align: left;
+  }
+}
+
+@media (max-width: 460px) {
+}

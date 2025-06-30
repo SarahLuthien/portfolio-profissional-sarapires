@@ -1,0 +1,36 @@
+/* about.css */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--cor-fundo-principal);
+  padding: var(--espacamento-secao) 2rem;
+}
+
+.about_paragraph {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--cor-texto-secundario);
+  line-height: 1.8;
+  text-align: center;
+  max-width: 800px;
+}
+
+.img_about {
+  display: none;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .about_paragraph {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .about_paragraph {
+    font-size: 0.9rem;
+  }
+}
