@@ -20,22 +20,24 @@ module.exports = async (req, res) => {
   }
 
   // Extrai os dados do corpo da requisição.
-  const { nome, email, mensagem } = req.body;
+  const { name, email, subject, message } = req.body;
 
   // Validação dos dados recebidos.
-  if (!nome || !email || !mensagem) {
+  if (!name || !email || !subject || !message) {
     return res.status(400).json({ message: 'Por favor, preencha todos os campos do formulário.' });
   }
 
   // Configuração das opções do e-mail.
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: process.env.DESTINATION_EMAIL, subject: `Nova Mensagem do Site de ${nome}`,
+    to: process.env.DESTINATION_EMAIL,
+    subject: `Nova Mensagem do Site de ${name} - Assunto: ${subject}`,
     html: `
-            <p><strong>Nome:</strong> ${nome}</p>
+            <p><strong>Nome:</strong> ${name}</p>
             <p><strong>E-mail do Remetente:</strong> ${email}</p>
+            <p><strong>Assunto:</strong> ${subject}</p>
             <p><strong>Mensagem:</strong></p>
-            <p>${mensagem}</p>
+            <p>${message}</p>
         `
   };
 

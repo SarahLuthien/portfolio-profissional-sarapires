@@ -71,11 +71,12 @@
   min-height: 120px;
 }
 
-.aviso {
-  color: var(--cor-destaque-secundario);
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-  text-align: left;
+#statusMessage {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  display: none;
 }
 
 .submit {
