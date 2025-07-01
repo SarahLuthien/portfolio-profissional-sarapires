@@ -1,5 +1,3 @@
-/* experience.css */
-
 .container_experience {
   background-color: var(--cor-fundo-principal);
 }
@@ -84,7 +82,7 @@
 /* Responsividade */
 @media (min-width: 768px) {
   .experiencie__box {
-    flex-direction: row; /* Lado a lado em telas maiores */
+    flex-direction: row;
     align-items: center;
     text-align: left;
   }

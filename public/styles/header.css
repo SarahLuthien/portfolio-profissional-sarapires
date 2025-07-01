@@ -1,4 +1,3 @@
-/* header.css */
 header {
   position: sticky;
   top: 0;
@@ -54,7 +53,7 @@ header.scrolled {
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: -2px; /* Pequeno ajuste para não sobrepor o texto */
+  bottom: -2px;
   left: 0;
   background-color: var(--cor-destaque-principal);
   transition: width 0.3s ease;
@@ -66,7 +65,7 @@ header.scrolled {
 
 .menu_list_item a:hover,
 #cv:hover {
-  color: var(--cor-texto-principal); /* Cor principal no hover */
+  color: var(--cor-texto-principal);
 }
 
 .menu_list_contato a {

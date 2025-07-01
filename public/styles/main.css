@@ -39,10 +39,9 @@ body {
   color: var(--cor-texto-principal);
   font-family: var(--fonte-corpo);
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased; /* Melhora a renderização da fonte */
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Transições suaves para todas as propriedades */
 *,
 *::before,
 *::after {
