@@ -109,7 +109,7 @@
 /* Tablet */
 @media (min-width: 768px) {
   .container_apresentacao_conteudo {
-    flex-direction: row; /* Lado a lado em telas maiores */
+    flex-direction: column; /* Lado a lado em telas maiores */
     text-align: left;
     gap: 4rem;
     padding: 0 2rem;
@@ -140,6 +140,14 @@
 
 /* Computador */
 @media (min-width: 1024px) {
+  .container_apresentacao_conteudo {
+    flex-direction: row;
+    text-align: left;
+
+    gap: 4rem;
+    padding: 0 2rem;
+  }
+
   .foto_perfil {
     width: 300px;
     height: 300px;
