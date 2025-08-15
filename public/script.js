@@ -1,4 +1,3 @@
-// public/script.js
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
     const statusMessage = document.getElementById('statusMessage');
