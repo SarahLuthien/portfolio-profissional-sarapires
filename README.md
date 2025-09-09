@@ -6,7 +6,7 @@
 <p>Quer conhecer um pouco mais sobre mim? Venha conferir alguns dos meus projetos!</p>
 
 <p>:globe_with_meridians: **Deploy:**</p>
-<a href="https://portfolio-profissional-sarapires-j5gjrcp6m.vercel.app">Clique Aqui para Acessar!</a>
+<a href="https://portfolio-profissional-sarapires.vercel.app/">Clique Aqui para Acessar!</a>
 
 ---
 
