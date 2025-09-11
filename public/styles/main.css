@@ -147,3 +147,26 @@ section:last-of-type {
     margin-bottom: 3rem;
   }
 }
+
+/* --- Tema Claro (Light Mode) --- */
+body.light-mode {
+  --cor-fundo-principal: #f4f4f9;
+  --cor-fundo-secundario: #ffffff;
+  --cor-borda: #e1e4e8;
+  --cor-texto-principal: #24292e;
+  --cor-texto-secundario: #586069;
+  --cor-destaque-principal: #8a2be2;
+  --cor-destaque-secundario: #007bff;
+}
+
+body.light-mode::-webkit-scrollbar-track {
+  background: #e1e4e8;
+}
+
+body.light-mode::-webkit-scrollbar-thumb {
+  background: #8a2be2;
+}
+
+body.light-mode::-webkit-scrollbar-thumb:hover {
+  background: #007bff;
+}

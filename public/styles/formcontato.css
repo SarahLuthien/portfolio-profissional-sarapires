@@ -19,16 +19,17 @@
   width: 100%;
 }
 
+.logo_animado {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .formcontato_logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.logo_animado {
-  height: 350px;
-  border-radius: 10px;
-  object-fit: cover;
+  align-items: center;
+  padding: 1rem;
 }
 
 .formcontato__title {
@@ -94,29 +95,4 @@
   background-color: var(--cor-destaque-secundario);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsividade */
-@media (min-width: 768px) {
-  .formcontato__contacto {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-  }
-
-  .formcontato_logo {
-    width: 40%;
-    margin-bottom: 0;
-  }
-
-  .formcontato__text {
-    width: 60%;
-  }
-
-  .formcontato__title {
-    text-align: left;
-  }
-}
-
-@media (max-width: 460px) {
 }
