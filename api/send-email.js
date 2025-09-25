@@ -12,22 +12,22 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-// 'req' contém os dados da requisição do seu formulário.
-// 'res' é usado para enviar uma resposta de volta para o seu formulário.
+
+
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Método não permitido. Use POST.' });
   }
 
-  // Extrai os dados do corpo da requisição.
+  // Extrai os dados 
   const { name, email, subject, message } = req.body;
 
-  // Validação dos dados recebidos.
+  // Validação dos dados recebidos
   if (!name || !email || !subject || !message) {
     return res.status(400).json({ message: 'Por favor, preencha todos os campos do formulário.' });
   }
 
-  // Configuração das opções do e-mail.
+  // Configuração das opções do e-mail
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.DESTINATION_EMAIL,
@@ -41,7 +41,7 @@ module.exports = async (req, res) => {
         `
   };
 
-  // Tentiva de  envio do e-mail usando o Nodemailer.
+
   try {
     await transporter.sendMail(mailOptions);
 

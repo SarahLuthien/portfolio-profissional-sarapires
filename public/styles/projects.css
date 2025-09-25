@@ -42,12 +42,14 @@
 }
 
 .experience__text {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
   color: var(--cor-texto-secundario);
 }
 
 .experience__sub {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--cor-texto-secundario);
   line-height: 1.6;
 }
@@ -57,6 +59,41 @@
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 1rem;
+}
+
+.experience__list {
+  color: var(--cor-texto-secundario);
+  font-weight: 400;
+}
+
+.experience__list li {
+  gap: 0.5rem;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.experience__subtitle {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  color: var(--cor-texto-principal);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.experience__tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background-color: var(--cor-fundo-secundario);
+  color: var(--cor-texto-secundario);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid var(--cor-borda);
 }
 
 .experiencia__botao--repo,

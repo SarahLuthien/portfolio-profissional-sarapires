@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <link rel="stylesheet" href="styles/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -193,6 +195,27 @@
     </section>
 
     <!-- 4. Sessão de Skills -->
+    <section class="container_skills_interactive" id="skills-panel">
+        <h2 class="section__title">Painel de Competências</h2>
+        <p class="section__subtitle">Uma visão geral das minhas habilidades. O gráfico representa minhas áreas de força,
+            e as abas abaixo detalham as tecnologias que utilizo.</p>
+
+        <div class="chart-container">
+            <canvas id="skillsChart"></canvas>
+        </div>
+        <div>
+            <div class="tabs-container">
+                <button class="skill-tab active" data-category="frontend">Front-end</button>
+                <button class="skill-tab" data-category="backend">Back-end</button>
+                <button class="skill-tab" data-category="devops">DevOps & Cloud</button>
+                <button class="skill-tab" data-category="softskills">Soft Skills</button>
+                <button class="skill-tab" data-category="other">Outras Ferramentas</button>
+            </div>
+            <div id="skills-content" class="skills-content-area">
+            </div>
+        </div>
+    </section>
+
     <section class="container_skills" id="skills">
         <h3 class="section__title"><strong>Skills</strong></h3>
         <div class="skills__line">
@@ -309,16 +332,44 @@
     <section class="container_projects" id="projetos">
         <h2 class="section__title"><strong>Projetos</strong></h2>
 
+        <!-- Projeto Furniro  -->
         <div class="experiencie__box">
             <img class="experience__img" src="assets/furniro-ezgif.com-optimize.gif"
                 alt="Imagem do projeto Furniro E-commerce">
             <div class="experience__info">
                 <h2 class="experience__title">Furniro E-commerce (Full Stack)</h2>
-                <h3 class="experience__text">Projeto de estudo Full Stack</h3>
-                <p class="experience__sub">Aplicação de e-commerce completa, desenvolvida com React e Vite no front-end
-                    e uma API robusta com Nest.js, TypeORM e PostgreSQL no back-end. Todo o ambiente foi containerizado
-                    com Docker.
-                </p>
+                <h3 class="experience__text">Objetivo: Projeto desenvolvido como parte do programa de estágio, com foco
+                    na construção de uma aplicação de e-commerce Full Stack.</h3>
+
+                <h4 class="experience__subtitle">Funcionalidades Principais:</h4>
+                <ul class="experience__list">
+                    <li>Catálogo de Produtos: Listagem de produtos na página inicial e na loja.</li>
+                    <li> Página de Detalhes: Informações completas de cada produto em rota dedicada.</li>
+                    <li>Filtragem de Produtos: Por categoria, novidades e promoções.</li>
+                    <li>Design Responsivo: Experiência otimizada para desktop, tablet e mobile.</li>
+                    <li>Ambiente Containerizado: Setup completo com Docker para desenvolvimento.</li>
+                    <li>API RESTful: Desenvolvida com NestJS, servindo dados para o frontend.</li>
+                </ul>
+
+                <h4 class="experience__subtitle">Tecnologias Utilizadas:</h4>
+                <div class="experience__tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Vite</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">React Router</span>
+                    <span class="tech-tag">Axios</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">NestJS</span>
+                    <span class="tech-tag">TypeORM</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Vercel</span>
+                    <span class="tech-tag">Railway</span>
+                    <span class="tech-tag">Git & GitHub</span>
+                </div>
+
                 <div class="experience__description">
                     <span class="experience__repo"><a target="_blank"
                             href="https://github.com/SarahLuthien/desafio_3_ecommerce"><button
@@ -330,26 +381,37 @@
             </div>
         </div>
 
+        <!-- Projeto Meteora  -->
         <div class="experiencie__box">
             <img class="experience__img" src="assets/meteora-app.gif" alt="Imagem do projeto Meteora - E-commerce">
             <div class="experience__info">
                 <h2 class="experience__title">Meteora - E-commerce de Moda</h2>
                 <h3 class="experience__text">Projeto de estudo Front-End</h3>
                 <p class="experience__sub">A aplicação simula uma loja online moderna, onde o usuário pode navegar pelos
-                    produtos e gerenciar seu carrinho de compras de forma intuitiva.
-                    Mais do que um simples exercício,
-                <ul>este projeto foi pensado para:</ul>
-                <li>- Consolidar o uso de hooks avançados do React (useReducer e useMemo) no gerenciamento de estados.
-                </li>
-                <li>- Explorar boas práticas de componentização e otimização de performance.</li>
-                <li>- Reforçar a integração entre frontend moderno (React + Vite) e UI com Bootstrap.</li>
-                <li>- Preparar terreno para futuras implementações, como filtragem de produtos, autenticação e
-                    integração com APIs reais.</li>
-                Tecnologias:React, Vite, JavaScript, Context API, useReducer, useMemo, Bootstrap.
-                </p>
+                    produtos e gerenciar seu carrinho de compras de forma intuitiva.</p>
+
+                <h4 class="experience__subtitle">Objetivos do Projeto:</h4>
+                <ul class="experience__list">
+                    <li>Consolidar o uso de hooks avançados do React (useReducer e useMemo).</li>
+                    <li>Explorar boas práticas de componentização e otimização de performance.</li>
+                    <li>Reforçar a integração entre frontend moderno (React + Vite) e UI com Bootstrap.</li>
+                    <li>Preparar para futuras implementações, como autenticação e integração com APIs.</li>
+                </ul>
+
+                <h4 class="experience__subtitle">Tecnologias:</h4>
+                <div class="experience__tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Vite</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Context API</span>
+                    <span class="tech-tag">useReducer</span>
+                    <span class="tech-tag">useMemo</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+
                 <div class="experience__description">
                     <span class="experience__repo"><a target="_blank"
-                            href="https://github.com/SarahLuthien/desafio_3_ecommerce"><button
+                            href="https://github.com/SarahLuthien/meteora-ecommerce"><button
                                 class="experiencia__botao--repo">Repositório</button></a></span>
                     <span class="experience__demo"><a target="_blank"
                             href="https://meteora-ecommerce-sand.vercel.app/"><button
@@ -358,17 +420,26 @@
             </div>
         </div>
 
+        <!-- Projeto Paws n' Play  -->
         <div class="experiencie__box">
             <img class="experience__img" src="assets/petshop.gif" alt="Imagem do projeto Paws n' Play">
             <div class="experience__info">
                 <h2 class="experience__title">Paws n' Play - Landing Page</h2>
                 <h3 class="experience__text">Projeto de estudo Front-End</h3>
-                <p class="experience__sub">"Desenvolvimento de uma landing page completa e responsiva para o petshop
-                    fictício "Paws n' Play".
-                    O projeto foi construído com foco em HTML semântico e CSS moderno (Flexbox/Grid), com interatividade
-                    em TypeScript.
-                    A seção de produtos é populada dinamicamente através do consumo de uma Mock API local (JSON),
-                    simulando uma integração real com um back-end."</p>
+                <p class="experience__sub">Desenvolvimento de uma landing page completa e responsiva para o petshop
+                    fictício "Paws n' Play". O projeto foi construído com foco em HTML semântico e CSS moderno
+                    (Flexbox/Grid), e a seção de produtos é populada dinamicamente através do consumo de uma Mock API
+                    local (JSON), simulando uma integração real com um back-end.</p>
+
+                <h4 class="experience__subtitle">Tecnologias:</h4>
+                <div class="experience__tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Flexbox & Grid</span>
+                    <span class="tech-tag">Mock API (JSON)</span>
+                </div>
+
                 <div class="experience__description">
                     <span class="experience__repo"><a target="_blank"
                             href="https://github.com/SarahLuthien/Petshop-PawsinPlay"><button
@@ -380,13 +451,32 @@
             </div>
         </div>
 
+        <!-- Projeto Aluraflix -->
         <div class="experiencie__box">
-            <img class="experience__img" src="assets/aluraflix_.png" alt=" imagem do site aluraflix">
+            <img class="experience__img" src="assets/aluraflix-ezgif.gif" alt="gif do site Aluraflix">
             <div class="experience__info">
                 <h2 class="experience__title">Aluraflix</h2>
-                <h3 class="experience__text">Projeto desenvolvido durante o curso da ONE - Alura.</h3>
-                <p class="experience__sub">Um site para cadastro e exclusão de vídeos, inspirado em plataformas de
-                    streaming. Tecnologias: React, JavaScript, API e Figma.</p>
+                <h3 class="experience__text">Objetivo: Criar uma Single Page Application (SPA) funcional e totalmente
+                    interativa, estabelecendo a base de componentes e a lógica de manipulação de dados no lado do
+                    cliente.</h3>
+
+                <h4 class="experience__subtitle">Detalhes da Implementação:</h4>
+                <ul class="experience__list">
+                    <li>Arquitetura de Componentes Reutilizáveis em React.</li>
+                    <li>Gerenciamento de Estado local com React Hooks (useState, useEffect).</li>
+                    <li>Operações CRUD (Criar, Ler, Editar, Deletar) no Front-End.</li>
+                    <li>Design Responsivo com fidelidade ao protótipo do Figma.</li>
+                </ul>
+
+                <h4 class="experience__subtitle">Tecnologias:</h4>
+                <div class="experience__tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Styled Components</span>
+                    <span class="tech-tag">React Router</span>
+                    <span class="tech-tag">Figma</span>
+                </div>
+
                 <div class="experience__description">
                     <span class="experience__repo"><a target="_blank"
                             href="https://github.com/SarahLuthien/aluraflix"><button
@@ -396,50 +486,38 @@
                 </div>
             </div>
         </div>
+
+        <!-- Projeto Valinor Geek Store  -->
         <div class="experiencie__box">
             <img class="experience__img" src="assets/valinor_store.gif">
             <div class="experience__info">
                 <h2 class="experience__title">Valinor Geek Store | Painel Administrativo</h2>
-                <h3 class="experience__text">Challenge Oracle-ONE</h3>
-                <p class="experience__sub">O Valinor Geek Store | Painel Administrativo é um painel administrativo
-                    desenvolvido para
-                    gerenciar o inventário de produtos de uma loja fictícia.
-                <ul>O sistema permite:
-                    <li>- Listar produtos com imagem, nome e preço.</li>
-                    <li>- Adicionar novos produtos via modal.</li>
-                    <li>- Editar produtos existentes.</li>
-                    <li>- Excluir produtos com confirmação.</li>
-                    <li>- Visualizar notificações (toast) após cada ação.</li>
+                <p class="experience__sub">Painel administrativo desenvolvido para gerenciar o inventário de produtos de
+                    uma loja fictícia, consumindo uma MockAPI para simular operações de back-end.</p>
+
+                <h4 class="experience__subtitle">O sistema permite:</h4>
+                <ul class="experience__list">
+                    <li>Listar produtos com imagem, nome e preço.</li>
+                    <li>Adicionar novos produtos via modal.</li>
+                    <li>Excluir produtos com confirmação.</li>
+                    <li>Visualizar notificações (toast) após cada ação.</li>
                 </ul>
-                Tecnologias: HTML5, Javascript, Tailwind CSS, MockAPI.
-                </p>
+
+                <h4 class="experience__subtitle">Tecnologias:</h4>
+                <div class="experience__tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">MockAPI</span>
+                </div>
+
                 <div class="experience__description">
                     <span class="experience__repo"><a target="_blank"
                             href="https://github.com/SarahLuthien/valinor-geek-store-admin"><button
                                 class="experiencia__botao--repo">Repositório</button></a></span>
                     <span class="experience__demo"><a target="_blank"
                             href="https://valinor-geek-store-admin.vercel.app/"><button
-                                class="experiencia__botao--demo">Ver
-                                demo</button></a></span>
-                </div>
-            </div>
-        </div>
-
-        </div>
-        <div class="experiencie__box">
-            <img class="experience__img" src="assets/cinetag_.png">
-            <div class="experience__info">
-                <h2 class="experience__title">Cinetag</h2>
-                <h3 class="experience__text">Projeto desenvolvido no curso de React da Alura</h3>
-                <p class="experience__sub">Site para visualização de vídeos, com a funcionalidade de favoritá-los.
-                    Tecnologias: React.js, API e Figma.</p>
-                <div class="experience__description">
-                    <span class="experience__repo"><a target="_blank"
-                            href="https://github.com/SarahLuthien/cinetag/tree/main"><button
-                                class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a target="_blank"
-                            href="https://cinetag-delta-neon.vercel.app/"><button class="experiencia__botao--demo">Ver
-                                demo</button></a></span>
+                                class="experiencia__botao--demo">Ver demo</button></a></span>
                 </div>
             </div>
         </div>
@@ -485,6 +563,7 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>
 

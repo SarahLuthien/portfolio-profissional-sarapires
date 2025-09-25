@@ -108,4 +108,126 @@ document.addEventListener('DOMContentLoaded', () => {
             menuList.classList.toggle('active');
         });
     }
+
+
+
+
+    // --- PAINEL DE COMPETÊNCIAS INTERATIVO ---
+    const skillsChartCanvas = document.getElementById('skillsChart');
+    if (skillsChartCanvas) {
+
+
+        function getChartColors() {
+            const isLightMode = document.body.classList.contains('light-mode');
+
+            if (isLightMode) {
+                // Cores para o tema claro
+                return {
+                    angleLines: 'rgba(0, 0, 0, 0.1)',
+                    grid: 'rgba(0, 0, 0, 0.1)',
+                    pointLabels: '#3D3D3D',
+                    ticks: '#9E9E9E'
+                };
+            } else {
+                // Cores para o tema escuro
+                return {
+                    angleLines: 'rgba(255, 255, 255, 0.2)',
+                    grid: 'rgba(255, 255, 255, 0.2)',
+                    pointLabels: '#E0E0E0',
+                    ticks: '#A0A0A0'
+                };
+            }
+        }
+
+        const chartColors = getChartColors();
+
+        const ctx = skillsChartCanvas.getContext('2d');
+        const skillsChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Front-end', 'Back-end', 'Cloud & DevOps', 'Soft Skills', 'Bancos de Dados'],
+                datasets: [{
+                    label: 'Nível de Proficiência',
+                    data: [9, 8, 7, 9, 8],
+                    backgroundColor: 'rgba(103, 58, 183, 0.2)',
+                    borderColor: 'rgba(103, 58, 183, 1)',
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(103, 58, 183, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(103, 58, 183, 1)'
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: chartColors.angleLines },
+                        grid: { color: chartColors.grid },
+                        pointLabels: { font: { size: 12 }, color: chartColors.pointLabels },
+                        ticks: {
+                            backdropColor: 'transparent',
+                            color: chartColors.ticks,
+                            stepSize: 1,
+                            beginAtZero: true
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+
+        const themeToggleForChart = document.getElementById('theme-toggle');
+        if (themeToggleForChart) {
+            themeToggleForChart.addEventListener('click', () => {
+                setTimeout(() => {
+                    const newColors = getChartColors();
+                    skillsChart.options.scales.r.angleLines.color = newColors.angleLines;
+                    skillsChart.options.scales.r.grid.color = newColors.grid;
+                    skillsChart.options.scales.r.pointLabels.color = newColors.pointLabels;
+                    skillsChart.options.scales.r.ticks.color = newColors.ticks;
+                    skillsChart.update();
+                }, 100);
+            });
+        }
+
+
+        const skills = {
+            frontend: ['React', 'Vue.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap'],
+            backend: ['Node.js', 'NestJS', 'TypeORM', 'Jest', 'APIs REST', 'Testes Unitários'],
+            devops: ['Docker', 'AWS', 'Google Cloud', 'Oracle Cloud (OCI)', 'Git', 'GitHub'],
+            softskills: ['Comunicação Assertiva', 'Resolução de Problemas Complexos', 'Trabalho em Equipe', 'Empatia com o Usuário', 'Resiliência', 'Análise Crítica', 'Gestão de Projetos'],
+            other: ['Figma', 'UX/UI', 'Engenharia de Prompt', 'PostgreSQL', 'MySQL']
+        };
+
+        const skillTabs = document.querySelectorAll('.skill-tab');
+        const skillsContent = document.getElementById('skills-content');
+
+        function updateSkillsContent(category) {
+            const items = skills[category];
+            skillsContent.innerHTML = `
+            <div class="flex-container">
+                ${items.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+            </div>
+        `;
+        }
+
+        skillTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                skillTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const category = tab.getAttribute('data-category');
+                updateSkillsContent(category);
+            });
+        });
+
+        updateSkillsContent('frontend');
+    }
+
 });
+

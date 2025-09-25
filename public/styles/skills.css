@@ -1,5 +1,124 @@
-.container_skills {
+/* Painel Session */
+
+.container_skills_interactive {
+  background-color: var(--cor-fundo-principal);
+  padding: 2rem 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--cor-borda);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.section__subtitle {
+  color: var(--cor-texto-secundario);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  margin-bottom: 3rem;
+}
+
+.tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-tab {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--cor-borda);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   background-color: var(--cor-fundo-secundario);
+  color: var(--cor-texto-principal);
+}
+
+.skill-tab:hover {
+  border-color: var(--cor-destaque-principal);
+  color: var(--cor-destaque-principal);
+}
+
+.skill-tab.active {
+  background-color: var(--cor-destaque-principal);
+  color: #ffffff;
+  border-color: var(--cor-destaque-principal);
+}
+
+.skills-content-area {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--cor-fundo-secundario);
+  border-radius: 0.75rem;
+  min-height: 100px;
+}
+
+.skills-content-area .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  background-color: var(--cor-fundo-principal);
+  color: var(--cor-destaque-principal);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--cor-borda);
+}
+
+/* Icons Session */
+
+.container_skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: var(--espacamento-secao) 2rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--cor-fundo-principal),
+    color-mix(
+      in srgb,
+      var(--cor-fundo-principal) 90%,
+      var(--cor-destaque-principal) 10%
+    ),
+    var(--cor-fundo-principal)
+  );
+  background-size: 400% 400%;
+  animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .skills__line {
@@ -46,6 +165,13 @@
 }
 
 @media (max-width: 480px) {
+  .chart-container {
+    height: 400px;
+  }
+  .container_skills_interactive {
+    padding: 4rem 2rem;
+  }
+
   .skill-card {
     width: calc(50% - 1rem);
     height: auto;

@@ -1,9 +1,36 @@
 .form_contato {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: var(--espacamento-secao) 1rem;
-  background-color: var(--cor-fundo-principal);
+  justify-content: center;
+  gap: 2rem;
+  padding: var(--espacamento-secao) 2rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--cor-fundo-principal),
+    color-mix(
+      in srgb,
+      var(--cor-fundo-principal) 90%,
+      var(--cor-destaque-principal) 10%
+    ),
+    var(--cor-fundo-principal)
+  );
+  background-size: 400% 400%;
+  animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .formcontato__contacto {

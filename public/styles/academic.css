@@ -1,5 +1,35 @@
 .container_academic {
-  background-color: var(--cor-fundo-secundario);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: var(--espacamento-secao) 2rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--cor-fundo-principal),
+    color-mix(
+      in srgb,
+      var(--cor-fundo-principal) 90%,
+      var(--cor-destaque-principal) 10%
+    ),
+    var(--cor-fundo-principal)
+  );
+  background-size: 400% 400%;
+  animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .academic__courses {
@@ -41,7 +71,7 @@
 }
 
 .academic__courses__item__subtitle {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.9rem;
   color: var(--cor-texto-secundario);
 }
