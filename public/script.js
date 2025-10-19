@@ -199,10 +199,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const skills = {
             frontend: ['React', 'Vue.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap'],
-            backend: ['Node.js', 'NestJS', 'TypeORM', 'Jest', 'APIs REST', 'Testes Unitários'],
+            backend: ['Node.js', 'NestJS', 'TypeORM', 'Java', 'Python', 'Jest', 'APIs REST', 'Testes Unitários'],
             devops: ['Docker', 'AWS', 'Google Cloud', 'Oracle Cloud (OCI)', 'Git', 'GitHub'],
             softskills: ['Comunicação Assertiva', 'Resolução de Problemas Complexos', 'Trabalho em Equipe', 'Empatia com o Usuário', 'Resiliência', 'Análise Crítica', 'Gestão de Projetos'],
-            other: ['Figma', 'UX/UI', 'Engenharia de Prompt', 'PostgreSQL', 'MySQL']
+            other: ['Figma', 'UX/UI', 'Engenharia de Prompt', 'PostgreSQL', 'MySQL', 'N8n']
         };
 
         const skillTabs = document.querySelectorAll('.skill-tab');
