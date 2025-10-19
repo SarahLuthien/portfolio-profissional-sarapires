@@ -16,6 +16,18 @@
   max-width: 800px;
 }
 
+.experience_paragraph p {
+  text-align: left;
+}
+
+.experience_paragraph ul {
+  text-align: justify;
+}
+
+.experience_paragraph li {
+  text-align: left;
+}
+
 /* Responsividade */
 @media (min-width: 768px) {
   .experience_paragraph {
